@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editkaro.in | Social Media & Video Editing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <a href="#" class="logo">Editkaro.in</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!-- Hero Section -->
+<section id="home" class="hero">
+    <h1>Welcome to Editkaro.in</h1>
+    <p>We help brands grow through exceptional social media marketing and video editing services.</p>
+    <a href="#portfolio" class="cta-btn">See Our Work</a>
+
+    <!-- Email Subscription Section -->
+    <section id="subscribe" class="subscribe-section">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form id="subscribeForm">
+            <label for="email">Email:</label>
+            <input type="email" id="subscriber-email" name="email" placeholder="Enter your email" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </section>
+    
+</section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <header>
+            <h2>Our Portfolio</h2>
+            <nav>
+                <button class="filter" data-filter="all">All</button>
+                <button class="filter" data-filter="short-form">Short Form</button>
+                <button class="filter" data-filter="long-form">Long Form</button>
+                <button class="filter" data-filter="gaming">Gaming</button>
+                <button class="filter" data-filter="football">Football</button>
+                <button class="filter" data-filter="ecommerce">eCommerce</button>
+                <button class="filter" data-filter="documentary">Documentary</button>
+                <button class="filter" data-filter="color-grading">Color Grading</button>
+                <button class="filter" data-filter="anime">Anime</button>
+            </nav>
+        </header>
+
+        <main>
+            <div class="video-item short-form">
+                <video src="short.mp4" controls onclick="openLightbox(this)"></video>
+                <h3>Short Form Video</h3>
+            </div>
+            <div class="video-item long-form">
+                <video src="loong.mp4" controls onclick="openLightbox(this)"></video>
+                <h3>Long Form Video</h3>
+            </div>
+            <div class="video-item gaming">
+                <video src="mygame.mp4" controls onclick="openLightbox(this)"></video>
+                <h3>Gaming Video</h3>
+            </div>
+            <div class="video-item football">
+                <video src="MVSR.mp4" controls onclick="openLightbox(this)"></video>
+                <h3>Football Edits</h3>
+            </div>
+            <div class="video-item ecommerce">
+                <video src="ecm.mp4" controls onclick="openLightbox(this)"></video>
+                <h3>eCommerce Ads</h3>
+            </div>
+            <div class="video-item documentary">
+                <video src="doc.mp4" controls onclick="openLightbox(this)"></video>
+                <h3>Documentary Style</h3>
+            </div>
+            <div class="video-item color-grading">
+                <video src="colourgrading.mp4" controls onclick="openLightbox(this)"></video>
+                <h3>Color Grading</h3>
+            </div>
+            <div class="video-item anime">
+                <video src="peak.mp4" controls onclick="openLightbox(this)"></video>
+                <h3>Anime Videos</h3>
+            </div>
+        </main>
+
+        <!-- Lightbox for Videos -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <video id="lightbox-video" controls></video>
+        </div>
+    </section>
+
+    <!-- About Us Section (Moved below Portfolio) -->
+    <section id="about" class="about-us-section">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="mission-vision">
+                <h3>Our Mission</h3>
+                <p>At Editkaro.in, our mission is to empower brands and individuals to express their unique stories through cutting-edge video editing and impactful social media marketing. We strive to deliver customized solutions that bring our clients' visions to life.</p>
+
+                <h3>Our Vision</h3>
+                <p>We envision a future where creativity meets strategy, allowing every brand to make a memorable impact in the digital world. Our vision is to become the go-to platform for top-notch video editing and social media management that helps brands thrive online.</p>
+            </div>
+
+            <!-- Team Members (Side by Side) -->
+            <div class="team-section">
+                <h3>Meet the Team</h3>
+                <div class="team-members" style="display: flex; justify-content: space-around;">
+                    <div class="team-member">
+                        <img src="team1.jpg" alt="Team Member 1">
+                        <h4>Rahul Verma</h4>
+                        <p>Founder & Lead Video Editor</p>
+                        <p>With years of experience in video production and editing, Rahul leads the creative vision at Editkaro.in, ensuring that every project exceeds expectations.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="team2.jpg" alt="Team Member 2">
+                        <h4>Ananya Kapoor</h4>
+                        <p>Head of Social Media Marketing</p>
+                        <p>Ananya specializes in creating tailored social media strategies that resonate with audiences and help brands grow their online presence.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="team3.jpg" alt="Team Member 3">
+                        <h4>Rohan Sharma</h4>
+                        <p>Creative Director</p>
+                        <p>Rohan brings a unique blend of creativity and technical skill to the table, making sure that every video and marketing campaign tells a compelling story.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-form-container">
+            <form class="contact-form" id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Editkaro.in</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+
+     <!-- Script for Subscription Form Submission -->
+<script>
+    const subscribeForm = document.getElementById('subscribeForm');
+    subscribeForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const formData = new FormData(subscribeForm);
+        const data = {
+            email: formData.get('email')
+        };
+
+        fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert('Subscription successful!');
+            subscribeForm.reset();
+        })
+        .catch(error => {
+            alert('Error submitting subscription');
+        });
+    });
+</script>
+
+
+    <!-- Script for Contact Form Submission -->
+    <script>
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = new FormData(contactForm);
+            const data = {};
+
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+
+            fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec', {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert('Form submitted successfully!');
+                contactForm.reset();
+            })
+            .catch(error => {
+                alert('Error submitting form');
+            });
+        });
+    </script>
+</body>
+</html>

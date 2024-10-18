@@ -1,0 +1,466 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5ff; /* Soft lavender background */
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #3b275f; /* Dark lavender for headings */
+}
+
+a {
+    text-decoration: none;
+    color: #3b275f;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #b39ddb; /* Primary lavender color */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack logo and nav links vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px; /* Space below logo */
+}
+
+.nav-links {
+    display: flex;
+    margin-top: 10px; /* Space above navigation links */
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #9575cd; /* Slightly darker lavender */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    padding-bottom: 60px; /* Add bottom padding */
+}
+
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #9575cd;
+    padding: 12px 30px;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #7e57c2;
+}
+
+/* Email Collector */
+.email-collector {
+    background-color: #ede7f6; /* Light lavender */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.email-collector input {
+    padding: 12px;
+    width: 280px;
+    border: 2px solid #b39ddb;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.email-collector button {
+    background-color: #7e57c2;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.email-collector button:hover {
+    background-color: #6a1b9a;
+}
+
+.email-collector p {
+    color: #3b275f;
+}
+
+.email-collector h2 {
+    margin-bottom: 15px;
+}
+.subscribe-section {
+    margin-top: 50px; /* Adjust this value for spacing */
+    text-align: center;
+    padding: 20px; /* Optional padding */
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2.2em;
+    }
+
+    .cta-btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .email-collector input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+/* About Us Section */
+#about {
+    background-color: #f3e5f5; /* Very soft lavender background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    color: #3b275f;
+    margin-bottom: 30px;
+}
+
+#about p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 250px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h4 {
+    font-size: 1.5em;
+    color: #3b275f;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #666;
+}
+/* Contact Us Section */
+#contact {
+    background-color: #ede7f6; /* Light lavender */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    color: #3b275f; /* Dark lavender for headings */
+    margin-bottom: 40px;
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-box {
+    background-color: #fff; /* White box for form */
+    padding: 40px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for more depth */
+    max-width: 700px;
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #b39ddb; /* Lavender border */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #3b275f; /* Lavender for label */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #b39ddb; /* Lavender border */
+    border-radius: 10px;
+    font-size: 1.1em;
+    background-color: #f9f9f9; /* Light background for form fields */
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form button {
+    background-color: #9575cd; /* Dark lavender button */
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #7e57c2; /* Slightly darker on hover */
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    #contact h2 {
+        font-size: 2em;
+    }
+
+    .contact-box {
+        padding: 30px;
+    }
+
+    .contact-form button {
+        padding: 12px;
+    }
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #e0e0f8; /* Lighter lavender shade */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #3b275f;
+}
+
+.portfolio-categories {
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    background-color: #b39ddb;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #9575cd;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E6E6FA;
+}
+
+header {
+    background: #4B0082;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    margin: 20px 0;
+}
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .filter {
+        flex-basis: calc(50% - 20px);
+        margin: 10px 0;
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .filter {
+        flex-basis: calc(50% - 20px);
+        padding: 15px;
+        font-size: 16px;
+        margin: 10px 0;
+    }
+}
+
+
+.filter:hover {
+    background: #836FFF;
+    transform: scale(1.05);
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.video-item {
+    background: #fff;
+    border-radius: 10px;
+    margin: 15px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.video-item:hover {
+    transform: translateY(-5px);
+}
+
+video {
+    width: 100%;
+    display: block;
+}
+
+h3 {
+    text-align: center;
+    padding: 10px 0;
+    color: #333;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s;
+}
+
+.lightbox video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #4B0082;
+    color: #fff;
+}
